@@ -1,0 +1,182 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rasa:wght@300&family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+/* Responsive */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: black;
+}
+.ln,
+.rn {
+  filter: brightness(0.5);
+  cursor: pointer;
+  transition: all 300ms;
+}
+.ln:hover,
+.rn:hover {
+  filter: brightness(1);
+  transform: scale(1.1) !important;
+  border: 1px solid red;
+}
+
+/* Navbar */
+.navbar {
+  z-index: 4;
+  padding-top: 20px;
+  background-color: black;
+  font-family: 'Rye';
+}
+.req {
+  transition: all 100ms;
+  filter: brightness(0.7);
+  transform: scale(1.2) !important;
+}
+.req:hover {
+  filter: brightness(1);
+  border: 1px solid red;
+}
+.font {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+.z {
+  font-size: small;
+}
+.card-title {
+  font-weight: bold;
+}
+.card-subtitle {
+  font-weight: bold;
+}
+.navbar-brand {
+  font-family: 'Bebas Neue';
+  font-size: 2em;
+}
+.nav-item {
+  margin-right: 1em;
+}
+/* Utility  */
+.btn-success.tombol {
+  background-color: #647b3a;
+  border: 3px solid #647b3a;
+  width: 100%;
+}
+.btn-success {
+  background-color: #647b3a;
+  border: 3px solid #647b3a;
+}
+.btn-success:hover {
+  background-color: #4d6129;
+  border: 3px solid #4d6129;
+}
+/* Jumbotron */
+.jumbotron {
+  height: 800px;
+  padding-left: 15px;
+  background-color: black;
+  z-index: 2;
+  font-family: 'Rasa';
+}
+.jumbotron .container-fluid {
+  position: relative;
+  z-index: 4;
+}
+.jumbotron p {
+  color: rgba(255, 255, 255, 0.4);
+}
+.jumbotron .row .col.mt-5 p:last-child {
+  color: rgba(255, 255, 255, 0.4);
+  margin-top: 12em;
+}
+.chr {
+  display: none;
+  transform: scale(1.5);
+  margin-top: 195px;
+  margin-right: 45px;
+}
+.text-custom {
+  color: rgb(170, 170, 170);
+}
+/* ! Dekstop CSS */
+@media (min-width: 992px) {
+  /* Navbar */
+  .navbar {
+    z-index: 4;
+    padding-top: 20px;
+    background-color: transparent;
+  }
+  .ln,
+  .rn {
+    filter: brightness(0.5);
+    cursor: pointer;
+    transition: all 1s;
+  }
+  .ln:hover,
+  .rn:hover {
+    filter: brightness(1);
+    transform: scale(1.1);
+    border: 1px solid red;
+  }
+  .req {
+    transform: scale(1.2);
+    transition: all 700ms;
+    filter: brightness(0.7);
+  }
+  .req:hover {
+    transform: scale(1.3);
+    filter: brightness(1);
+    border: 1px solid red;
+  }
+  .nav-item {
+    margin-right: 1em;
+  }
+  /* Utility  */
+  body {
+    overflow-x: hidden;
+  }
+  .btn-success {
+    background-color: #647b3a;
+    border: 3px solid #647b3a;
+    padding: 5px 20px;
+  }
+
+  .btn-success:hover {
+    background-color: #4d6129;
+    border: 3px solid #4d6129;
+  }
+
+  /* Jumbotron */
+  .jumbotron {
+    background: url(img/background-titan.jpg) no-repeat;
+    margin-top: -83px;
+    background-size: cover;
+    height: 1024px;
+    padding-left: 15px;
+    background-color: #c4c4c4;
+    z-index: 2;
+  }
+  .jumbotron .container-fluid {
+    position: relative;
+    z-index: 4;
+  }
+  .jumbotron p {
+    color: rgba(255, 255, 255, 0.4);
+  }
+  .jumbotron .row .col.mt-5 p:last-child {
+    color: rgba(255, 255, 255, 0.4);
+    margin-top: 12em;
+  }
+  .chr {
+    display: inline-block;
+    transform: scale(1.5);
+    margin-top: 195px;
+    margin-right: 45px;
+  }
+  .card {
+    width: 205px;
+    height: 345px;
+  }
+}
